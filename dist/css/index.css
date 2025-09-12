@@ -1,13 +1,83 @@
-h1 {
+@font-face {
+  font-family: Outfit;
+  src: url(/assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+@font-face {
   font-family: "Young Serif";
+  src: url(/assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h2 {
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
   font-family: Outfit;
+  background-color: hsl(0, 0%, 100%);
+}
+
+p,
+ul,
+ol {
+  margin-bottom: 1rem;
+  color: hsl(30, 10%, 34%);
+}
+
+li {
+  padding: 0.5rem 0;
+}
+
+header {
+  margin-bottom: 2rem;
+  border: 1px solid;
+  width: 100%;
+}
+header img {
+  width: 100vw;
+}
+
+.content {
+  margin: 0 auto;
+  width: 85%;
+}
+.content h1 {
+  font-family: "Young Serif";
+  margin-bottom: 1rem;
+}
+
+.content__intro .prep-time {
+  margin-bottom: 1rem;
+  padding: 1rem 2rem;
+  line-height: 1.2;
+  background-color: hsl(330, 100%, 98%);
+}
+.content__intro .prep-time li::marker {
+  color: hsl(332, 51%, 32%);
+}
+.content__intro .prep-time h2 {
+  font-family: Outfit;
+  color: hsl(332, 51%, 32%);
+}
+
+section {
+  width: 100%;
+  border: 1px solid;
+}
+section h2 {
+  font-family: "Young Serif";
   font-weight: 700;
 }
-
-h3 {
-  font-family: Outfit;
-  font-weight: 600;
+section ul,
+section ol {
+  margin-left: 2rem;
+}
+section ul li,
+section ol li {
+  padding-left: 1rem;
 }/*# sourceMappingURL=index.css.map */

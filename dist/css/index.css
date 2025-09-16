@@ -19,27 +19,27 @@ body {
   align-items: center;
   width: 100vw;
   font-family: Outfit;
-  padding-bottom: 2rem;
-  background-color: hsl(0, 0%, 100%);
 }
 
 header {
   margin-bottom: 2rem;
-  width: 100vw;
 }
 header img {
   width: 100%;
 }
 
 .content {
-  width: 84%;
-  min-width: 315px;
+  background-color: hsl(0, 0%, 100%);
+  border: 1px solid;
 }
 
 li {
   padding: 0.5rem 0;
 }
 
+section {
+  padding: 0 3rem 1rem;
+}
 section h2 {
   font-family: "Young Serif";
   font-weight: 600;

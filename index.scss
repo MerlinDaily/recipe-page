@@ -34,60 +34,71 @@ body {
 	@include flexCenter(column);
 	width: 100vw;
 	font-family: Outfit;
+	padding-bottom: 2rem;
 	background-color: $white;
 }
 
-p,
-ul,
-ol {
-	margin-bottom: 1rem;
-	color: $stone600;
-}
+// p,
+// ul,
+// ol {
+// 	margin-bottom: 1rem;
+// 	color: $stone600;
+// }
 
 li {
 	padding: 0.5rem 0;
 }
 
-// header {
-// 	margin-bottom: 2rem;
-// 	border: 1px solid;
-
-// 	img {
-// 		width: 100vw;
-// 		margin-bottom: 2rem;
-// 	}
-
-// 	h1 {
-// 		margin-left: 1.5rem;
-// 		font-family: "Young Serif";
-// 		border: 1px solid;
-// 	}
-// }
-
 header {
 	margin-bottom: 2rem;
-	border: 1px solid;
 	width: 100%;
 
 	img {
-		width: 100vw;
+		width: 100%;
 	}
 }
 
 .content {
 	margin: 0 auto;
 	width: 85%;
+	// border: 1px solid red;
+}
 
-	h1 {
+section {
+	h2 {
 		font-family: "Young Serif";
-		margin-bottom: 1rem;
+		font-weight: 700;
+	}
+
+	ul,
+	ol {
+		margin-left: 2rem;
+
+		li {
+			padding-left: 1rem;
+		}
 	}
 }
 
 .content__intro {
-	.prep-time {
+	margin-bottom: 1rem;
+
+	// border: 1px solid;
+
+	h1 {
+		font-family: "Young Serif";
 		margin-bottom: 1rem;
-		padding: 1rem 2rem;
+		color: $stone900;
+	}
+
+	p,
+	li {
+		color: $stone600;
+	}
+
+	.prep-time {
+		margin-top: 1rem;
+		padding: 1rem;
 		line-height: 1.2;
 		background-color: $rose50;
 
@@ -102,26 +113,76 @@ header {
 	}
 }
 
-section {
-	width: 100%;
-	// margin-left: 2rem;
-	// padding-left: 2rem;
+.content__ingredients {
+	margin-bottom: 1rem;
+	padding-bottom: 1rem;
+	color: $stone600;
 
-	border: 1px solid;
+	h2,
+	li::marker {
+		color: $brown800;
+	}
+}
+
+.content__instructions {
+	width: 100%;
+	padding-bottom: 1rem;
+	border-bottom: solid 1px $stone600;
+
+	// border: 1px solid;
 
 	h2 {
-		font-family: "Young Serif";
-		font-weight: 700;
-
-		// color: ;
+		color: $brown800;
+		margin-bottom: 0.5rem;
 	}
 
-	ul,
-	ol {
-		margin-left: 2rem;
+	li {
+		color: $stone600;
 
-		li {
-			padding-left: 1rem;
+		&::marker {
+			font-weight: bold;
+			color: $brown800;
+		}
+	}
+}
+
+.content__nutrition {
+	width: 95%;
+	padding-top: 1rem;
+	// border: 1px solid;
+
+	h2 {
+		color: $brown800;
+		margin-bottom: 1rem;
+	}
+
+	p {
+		color: $stone600;
+		margin-bottom: 1.5rem;
+		// border: 1px solid;
+	}
+
+	table {
+		width: 100%;
+		margin: 0 auto;
+		border-collapse: collapse;
+		color: $stone600;
+		// border: 1px solid;
+
+		tr {
+			border-bottom: 1px solid $stone600;
+		}
+
+		td {
+			padding: 0.5rem;
+
+			&:nth-child(1) {
+				padding-left: 2rem;
+			}
+
+			&:nth-child(2) {
+				color: $brown800;
+			}
 		}
 	}
 }

@@ -23,30 +23,30 @@ body {
   background-color: hsl(0, 0%, 100%);
 }
 
-li {
-  padding: 0.5rem 0;
-}
-
 header {
   margin-bottom: 2rem;
-  width: 100%;
+  width: 100vw;
 }
 header img {
   width: 100%;
 }
 
 .content {
-  margin: 0 auto;
-  width: 85%;
+  width: 84%;
+  min-width: 315px;
+}
+
+li {
+  padding: 0.5rem 0;
 }
 
 section h2 {
   font-family: "Young Serif";
-  font-weight: 700;
+  font-weight: 600;
 }
 section ul,
 section ol {
-  margin-left: 2rem;
+  margin-left: 1.5rem;
 }
 section ul li,
 section ol li {
@@ -83,6 +83,7 @@ section ol li {
   margin-bottom: 1rem;
   padding-bottom: 1rem;
   color: hsl(30, 10%, 34%);
+  border-bottom: solid 1px hsl(30, 18%, 87%);
 }
 .content__ingredients h2,
 .content__ingredients li::marker {
@@ -92,7 +93,7 @@ section ol li {
 .content__instructions {
   width: 100%;
   padding-bottom: 1rem;
-  border-bottom: solid 1px hsl(30, 10%, 34%);
+  border-bottom: solid 1px hsl(30, 18%, 87%);
 }
 .content__instructions h2 {
   color: hsl(14, 45%, 36%);
@@ -107,7 +108,6 @@ section ol li {
 }
 
 .content__nutrition {
-  width: 95%;
   padding-top: 1rem;
 }
 .content__nutrition h2 {
@@ -116,7 +116,7 @@ section ol li {
 }
 .content__nutrition p {
   color: hsl(30, 10%, 34%);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 .content__nutrition table {
   width: 100%;
@@ -124,15 +124,17 @@ section ol li {
   border-collapse: collapse;
   color: hsl(30, 10%, 34%);
 }
-.content__nutrition table tr {
-  border-bottom: 1px solid hsl(30, 10%, 34%);
+.content__nutrition table tr:nth-child(-n+3) {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
 }
 .content__nutrition table td {
   padding: 0.5rem;
 }
 .content__nutrition table td:nth-child(1) {
+  width: 47%;
   padding-left: 2rem;
 }
 .content__nutrition table td:nth-child(2) {
   color: hsl(14, 45%, 36%);
+  font-weight: 600;
 }/*# sourceMappingURL=index.css.map */

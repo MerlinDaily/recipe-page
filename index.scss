@@ -38,20 +38,9 @@ body {
 	background-color: $white;
 }
 
-// p,
-// ul,
-// ol {
-// 	margin-bottom: 1rem;
-// 	color: $stone600;
-// }
-
-li {
-	padding: 0.5rem 0;
-}
-
 header {
 	margin-bottom: 2rem;
-	width: 100%;
+	width: 100vw;
 
 	img {
 		width: 100%;
@@ -59,20 +48,23 @@ header {
 }
 
 .content {
-	margin: 0 auto;
-	width: 85%;
-	// border: 1px solid red;
+	width: 84%;
+	min-width: 315px;
+}
+
+li {
+	padding: 0.5rem 0;
 }
 
 section {
 	h2 {
 		font-family: "Young Serif";
-		font-weight: 700;
+		font-weight: 600;
 	}
 
 	ul,
 	ol {
-		margin-left: 2rem;
+		margin-left: 1.5rem;
 
 		li {
 			padding-left: 1rem;
@@ -117,6 +109,7 @@ section {
 	margin-bottom: 1rem;
 	padding-bottom: 1rem;
 	color: $stone600;
+	border-bottom: solid 1px $stone150;
 
 	h2,
 	li::marker {
@@ -127,7 +120,7 @@ section {
 .content__instructions {
 	width: 100%;
 	padding-bottom: 1rem;
-	border-bottom: solid 1px $stone600;
+	border-bottom: solid 1px $stone150;
 
 	// border: 1px solid;
 
@@ -147,7 +140,6 @@ section {
 }
 
 .content__nutrition {
-	width: 95%;
 	padding-top: 1rem;
 	// border: 1px solid;
 
@@ -158,7 +150,7 @@ section {
 
 	p {
 		color: $stone600;
-		margin-bottom: 1.5rem;
+		margin-bottom: 1rem;
 		// border: 1px solid;
 	}
 
@@ -167,22 +159,60 @@ section {
 		margin: 0 auto;
 		border-collapse: collapse;
 		color: $stone600;
-		// border: 1px solid;
 
-		tr {
-			border-bottom: 1px solid $stone600;
+		tr:nth-child(-n + 3) {
+			border-bottom: 1px solid $stone150;
 		}
 
 		td {
 			padding: 0.5rem;
 
 			&:nth-child(1) {
+				width: 47%;
 				padding-left: 2rem;
 			}
 
 			&:nth-child(2) {
 				color: $brown800;
+				font-weight: 600;
 			}
 		}
 	}
 }
+
+// // sm
+// @media (min-width: 375px) {
+// 	.content {
+// 		width: 84%;
+// 		min-width: 375px;
+// 	}
+// }
+
+// // md
+// @media (min-width: 768px) {
+// 	.content {
+// 		width: 50%;
+// 	}
+// }
+
+// @media (min-width: 1024px) {
+// 	body {
+// 		// padding: 4rem 0;
+// 		background-color: $stone100;
+// 	}
+
+// 	.page-image {
+// 		width: 55%;
+// 		margin: 0 auto;
+// 		border-radius: 1rem;
+// 	}
+
+// 	.content {
+// 		width: 55%;
+// 		margin: 2rem auto;
+// 		padding: 2rem;
+// 		background-color: $white;
+// 		border-radius: 1rem;
+// 		// border: 1px solid red;
+// 	}
+// }

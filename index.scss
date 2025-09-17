@@ -34,7 +34,7 @@ body {
 	@include flexCenter(column);
 	width: 100vw;
 	font-family: Outfit;
-	// background-color: $white;
+	background-color: $white;
 }
 
 header {
@@ -49,7 +49,7 @@ header {
 	// min-width: 315px;
 
 	background-color: $white;
-	border: 1px solid;
+	// border: 1px solid;
 }
 
 li {
@@ -57,7 +57,7 @@ li {
 }
 
 section {
-	padding: 0 3rem 1rem;
+	// padding: 0 3rem 1rem;
 
 	h2 {
 		font-family: "Young Serif";
@@ -94,6 +94,7 @@ section {
 		margin-top: 1rem;
 		padding: 1rem;
 		line-height: 1.2;
+		border-radius: 1rem;
 		background-color: $rose50;
 
 		li::marker {
@@ -182,41 +183,29 @@ section {
 	}
 }
 
-// // sm
-// @media (min-width: 375px) {
-// 	.content {
-// 		width: 84%;
-// 		min-width: 375px;
-// 	}
-// }
+// md
+@media (min-width: 768px) {
+	.content {
+		width: 84%;
+		min-width: 375px;
+	}
+}
 
-// // md
-// @media (min-width: 768px) {
-// 	.content {
-// 		width: 50%;
-// 	}
-// }
+//lg
+@media (min-width: 1024px) {
+	body {
+		padding: 3rem 0;
+		background-color: $stone100;
+	}
 
-// //lg
-// @media (min-width: 1024px) {
-// 	body {
-// 		// padding: 4rem 0;
-// 		background-color: $stone100;
-// 	}
+	.content {
+		width: 70%;
+		padding: 2rem;
+		border-radius: 1rem;
+		background-color: $white;
 
-// 	.page-image {
-// 		width: 55%;
-// 		margin: 0 auto;
-// 		border-radius: 1rem;
-// 	}
-
-// 	.content {
-// 		width: 55%;
-// 		margin: 2rem auto;
-// 		padding: 2rem;
-// 		background-color: $white;
-// 		border-radius: 1rem;
-
-// 		// border: 1px solid red;
-// 	}
-// }
+		.page-image {
+			border-radius: 1rem;
+		}
+	}
+}

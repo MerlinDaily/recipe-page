@@ -19,6 +19,7 @@ body {
   align-items: center;
   width: 100vw;
   font-family: Outfit;
+  background-color: hsl(0, 0%, 100%);
 }
 
 header {
@@ -30,16 +31,12 @@ header img {
 
 .content {
   background-color: hsl(0, 0%, 100%);
-  border: 1px solid;
 }
 
 li {
   padding: 0.5rem 0;
 }
 
-section {
-  padding: 0 3rem 1rem;
-}
 section h2 {
   font-family: "Young Serif";
   font-weight: 600;
@@ -69,6 +66,7 @@ section ol li {
   margin-top: 1rem;
   padding: 1rem;
   line-height: 1.2;
+  border-radius: 1rem;
   background-color: hsl(330, 100%, 98%);
 }
 .content__intro .prep-time li::marker {
@@ -137,4 +135,26 @@ section ol li {
 .content__nutrition table td:nth-child(2) {
   color: hsl(14, 45%, 36%);
   font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .content {
+    width: 84%;
+    min-width: 375px;
+  }
+}
+@media (min-width: 1024px) {
+  body {
+    padding: 3rem 0;
+    background-color: hsl(30, 54%, 90%);
+  }
+  .content {
+    width: 70%;
+    padding: 2rem;
+    border-radius: 1rem;
+    background-color: hsl(0, 0%, 100%);
+  }
+  .content .page-image {
+    border-radius: 1rem;
+  }
 }/*# sourceMappingURL=index.css.map */

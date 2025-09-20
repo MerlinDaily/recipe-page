@@ -135,18 +135,18 @@ section ol li {
 
 @media (min-width: 768px) {
   .content {
-    width: 84%;
-    min-width: 375px;
+    min-width: 385px;
+  }
+  section {
+    padding: 0 3rem;
   }
 }
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (1024px <= width <= 1440px) {
   body {
-    padding: 3rem 0;
+    padding: 3rem 5rem;
     background-color: hsl(30, 54%, 90%);
   }
   .content {
-    width: 70%;
-    max-width: 70%;
     padding: 2rem;
     border-radius: 1rem;
     background-color: hsl(0, 0%, 100%);

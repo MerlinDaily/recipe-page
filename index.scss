@@ -46,10 +46,8 @@ header {
 }
 
 .content {
-	// min-width: 315px;
-
+	min-width: 375px;
 	background-color: $white;
-	// border: 1px solid;
 }
 
 li {
@@ -57,7 +55,7 @@ li {
 }
 
 section {
-	// padding: 0 3rem 1rem;
+	padding: 0 2rem 0; //xout
 
 	h2 {
 		font-family: "Young Serif";
@@ -76,8 +74,6 @@ section {
 
 .content__intro {
 	margin-bottom: 1rem;
-
-	// border: 1px solid;
 
 	h1 {
 		font-family: "Young Serif";
@@ -183,6 +179,7 @@ section {
 	}
 }
 
+//TODO
 // md
 @media (min-width: 768px) {
 	.content {
@@ -192,7 +189,7 @@ section {
 }
 
 //lg
-@media (min-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1440px) {
 	body {
 		padding: 3rem 0;
 		background-color: $stone100;

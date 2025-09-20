@@ -35,6 +35,7 @@ body {
 	width: 100vw;
 	font-family: Outfit;
 	background-color: $white;
+	padding-bottom: 2rem;
 }
 
 header {
@@ -180,7 +181,7 @@ section {
 }
 
 // md
-@media (min-width: 768px) {
+@media (768px <= width <= 992px) {
 	.content {
 		min-width: 385px;
 	}
@@ -193,11 +194,16 @@ section {
 //lg
 @media (1024px <= width <= 1440px) {
 	body {
-		padding: 3rem 5rem;
+		padding: 3rem 10rem;
 		background-color: $stone100;
 	}
 
+	section {
+		padding: 0;
+	}
+
 	.content {
+		max-width: 44rem; //704px
 		padding: 2rem;
 		border-radius: 1rem;
 		background-color: $white;

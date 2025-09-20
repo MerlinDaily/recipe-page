@@ -12,6 +12,7 @@ body {
   width: 100vw;
   font-family: Outfit;
   background-color: hsl(0, 0%, 100%);
+  padding-bottom: 2rem;
 }
 
 header {
@@ -133,7 +134,7 @@ section ol li {
   font-weight: 600;
 }
 
-@media (min-width: 768px) {
+@media (768px <= width <= 992px) {
   .content {
     min-width: 385px;
   }
@@ -143,10 +144,14 @@ section ol li {
 }
 @media (1024px <= width <= 1440px) {
   body {
-    padding: 3rem 5rem;
+    padding: 3rem 10rem;
     background-color: hsl(30, 54%, 90%);
   }
+  section {
+    padding: 0;
+  }
   .content {
+    max-width: 44rem;
     padding: 2rem;
     border-radius: 1rem;
     background-color: hsl(0, 0%, 100%);
